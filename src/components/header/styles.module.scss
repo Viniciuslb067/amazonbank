@@ -1,0 +1,146 @@
+.headerWrapper {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 9;
+  will-change: transform;
+
+  header {
+    display: flex;
+    -webkit-box-align: center;
+    position: relative;
+    will-change: transform;
+    transition: transform 0.2s ease 0s;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+  }
+}
+
+.header {
+  width: 100%;
+  position: relative;
+}
+
+.content {
+  background-color: #fff;
+  display: grid;
+  width: 100%;
+  height: 64px;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  gap: 8px;
+  grid-template-columns: min-content minmax(160px, 1fr) minmax(min-content, auto);
+  padding-right: 10px;
+  padding-left: 24px;
+  position: relative;
+  z-index: 2;
+}
+
+.brand {
+  display: flex;
+  width: auto;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.list {
+  display: flex;
+  width: fit-content;
+  list-style: none;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+
+  li { 
+    height: 100%;
+    margin-right: 24px;
+    display: flex;
+    align-items: center;
+
+    a {
+      font-weight: 500;
+    }
+   }
+}
+
+.list::before {
+  content: "";
+  width: 100%;
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: -3;
+  box-shadow: rgb(17 17 17 / 10%) 0px 1px 1px;
+}
+
+.login {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+
+  div {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    div {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      min-width: 100%;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: end;
+      justify-content: flex-end;
+      flex-direction: row;
+
+      a {
+        font-family: Roboto, sans-serif;
+        margin: 0;
+        color: 	#006b00;
+        font-weight: 500;
+        letter-spacing: -0.03rem;
+        font-size: 1.125rem;
+        line-height: 1.2;
+
+        display: inline-flex;
+
+      }
+    }
+  }
+}
+
+.iconLogin {
+  margin: 0 0 0 0.5rem;
+  color: #006b00;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .content {
+    padding-right: 18px;
+    padding-left: 32px;
+  }
+}
+
+@media (min-width: 1152px) {
+  .content {
+    height: 56px;
+    gap: 32px;
+    padding-right: 48px;
+    padding-left: 48px;
+    z-index: auto;
+  }
+}
