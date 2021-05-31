@@ -22,6 +22,7 @@
   letter-spacing: -0.03rem;
   font-size: 1.75rem;
   line-height: 1.16;
+  color: rgb(255, 255, 255);
 }
 
 .subTitle {
@@ -31,6 +32,7 @@
   letter-spacing: -0.03rem;
   font-size: 1.25rem;
   line-height: 1.25;
+  color: rgb(255, 255, 255);
 }
 
 .sectionregister {
@@ -263,35 +265,6 @@
 }
 
 @media (min-width: 768px) {
-  .sectionContainer {
-    min-height: calc(100vh - 3rem);
-    gap: 48px 32px;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 1fr;
-    padding: 80px 24px
-  }
-
-  .subTitle {
-    font-size: 1.5rem;
-    line-height: 1.32;
-  }
-
-  .sectionText {
-    grid-row: initial;
-  }
-
-  .title {
-    font-size: 3rem;
-  }
-
-  .sectionRegister {
-    place-self: flex-end;
-  }
-
-  .formContent {
-    margin-right: 0;
-  }
-
   .sectionArticle {
     flex-flow: row wrap;
   }
@@ -360,24 +333,6 @@
 }
 
 @media (min-width: 1152px) {
-  .sectionContainer {
-    -webkit-box-align: center;
-    align-items: center;
-    row-gap: 0;
-    grid-template-columns: repeat(12, 1fr);
-    padding-right: 48px;
-    padding-left: 48px;
-  }
-
-  .sectionText {
-    grid-column: 2 / span 4;
-  }
-
-  .sectionregister {
-    place-self: auto;
-    grid-area: 1 / 9 / auto / span 4;
-  }
-
   .sectionArticle {
     height: 100%;
   }
