@@ -43,8 +43,9 @@ export function Header() {
               <div className={styles.login}>
                 <div>
                   <div>
-                    <a href="#">Login</a>
-                    <CgEnter size={35} className={styles.iconLogin} />
+                    <a href="/login" target="_blank">Login
+                    <CgEnter size={20} className={styles.iconLogin} />
+                    </a>
                   </div>
                 </div>
               </div>
