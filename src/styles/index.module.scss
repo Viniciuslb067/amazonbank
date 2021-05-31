@@ -204,6 +204,63 @@
   }
 }
 
+.cardImage {
+  display: flex;
+  flex-flow: column wrap;
+  -webkit-box-align: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-bottom: 48px;
+
+  div {
+    height: auto;
+    width: 100%;
+
+    div {
+      display: flex;
+      justify-content: center;
+
+      picture {
+        box-sizing: border-box;
+        margin: 0;
+        -webkit-font-smoothing: antialiased;
+        appearance: none;
+        text-size-adjust: 100%;
+        border: 0;
+        font-weight: inherit;
+        outline: 0;
+        padding: 0;
+        text-rendering: optimizeLegibility;
+
+        img {
+          margin: 0 auto;
+          display: block;
+          object-fit: cover;
+          width: auto;
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: 360px) {
+  .cardImage {
+    div {
+      div {
+        picture {
+          img {
+            max-height: 360px;
+          }
+        }
+      }
+    }
+  }
+  
+}
 
 @media (min-width: 768px) {
   .sectionContainer {
@@ -287,6 +344,19 @@
       }
     }
   }
+
+  .cardImage {
+    div {
+      div {
+        picture {
+          img {
+            max-height: 480px;
+          }
+        }
+      }
+    }
+  }
+
 }
 
 @media (min-width: 1152px) {
@@ -318,5 +388,19 @@
       height: 100%;
     }
   }
+
+  .cardImage {
+    div {
+      div {
+        picture {
+          img {
+            height: auto;
+            max-width: 70vh;
+          }
+        }
+      }
+    }
+  }
+
 }
 
