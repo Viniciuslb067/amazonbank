@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { GiTreeBranch } from "react-icons/gi";
 import { CgEnter } from "react-icons/cg";
 
@@ -11,7 +13,11 @@ export function Header() {
           <div className={styles.header}>
             <div className={styles.content}>
               <div className={styles.brand}>
-                <GiTreeBranch size={40} className={styles.brandLogo} />
+                <Link href="/">
+                  <a>
+                    <GiTreeBranch size={35} className={styles.brandLogo} />
+                  </a>
+                </Link>
               </div>
               <nav className={styles.list}>
                 <li>
