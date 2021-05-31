@@ -131,8 +131,79 @@
     height: auto;
     max-height: 404px;
   }
-
 }
+
+.thirdSection {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding: 0;
+  position: relative;
+
+  article {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    max-width: 1328px;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      justify-content: center;
+      text-align: left;
+      position: relative;
+      order: 1;
+      align-items: flex-start;
+      padding: 64px 32px;
+
+      a {
+        text-decoration: none;
+        margin: 0;
+        color: green;
+        font-family: Roboto, sans-serif;
+        font-weight: 400;
+        letter-spacing: -0.01rem;
+        font-size: 1.125rem;
+        line-height: 1.32;
+
+        &:hover {
+          text-decoration: underline;
+        }
+
+        h1 {
+          font-family: Roboto, sans-serif;
+          margin: 0;
+          font-weight: 500;
+          letter-spacing: -0.03rem;
+          font-size: 1.75rem;
+          line-height: 1.16;
+        }
+      }
+
+      p {
+        font-family: Roboto, sans-serif;
+        margin: 0 0 32px;
+        white-space: pre-line;
+        font-weight: 500;
+        letter-spacing: -0.03rem;
+        font-size: 1.75rem;
+        line-height: 1.16;
+        color: rgb(17, 17 ,17);
+      }
+
+      a {
+        font-family: Roboto, sans-serif;
+        margin: 0;
+        font-weight: 500;
+        letter-spacing: -0.03rem;
+        font-size: 1.125rem;
+        line-height: 1.35;
+      }
+    }
+  }
+}
+
 
 @media (min-width: 768px) {
   .sectionContainer {
@@ -192,9 +263,30 @@
       max-height: 479px;
       object-fit: scale-down;
     }
-
   }
 
+  .thirdSection {
+    article {
+      flex-flow: row wrap;
+
+      div {
+        padding-right: 0;
+        padding: 64px;
+        width: 50%;
+        order: unset;
+
+        a {
+          h1 {
+            font-size: 3rem;
+          }
+        }
+
+        p {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 1152px) {
@@ -220,5 +312,11 @@
     height: 100%;
   }
 
+  .thirdSection {
+    article {
+      min-height: calc(100% - 56px);
+      height: 100%;
+    }
+  }
 }
 

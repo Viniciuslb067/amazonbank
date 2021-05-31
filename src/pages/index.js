@@ -1,5 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
+
+import { IoIosArrowRoundForward } from "react-icons/io";
+
 import styles from "../styles/index.module.scss";
 
 export default function Home() {
@@ -69,7 +72,22 @@ export default function Home() {
           </article>
         </section>
 
-        <section></section>
+        <section className={styles.thirdSection}>
+          <article className={styles.thirdArticle}>
+            <div className={styles.infoCardText}>
+              <a href="#" className={styles.infoCardTitle}>
+                <h1 className={styles.infoTitle}>Cartão de Crédito</h1>
+              </a>
+              <p className={styles.infoCardBody}>
+                Pode chamar ele de verdinho. Além disso, pode chamar ele de
+                moderno, gratuito e prático também.
+              </p>
+              <a href="#"className={styles.infoCardKnowMore}>Saiba mais
+              </a>
+            </div>
+            <div className={styles.cardImage}></div>
+          </article>
+        </section>
       </div>
     </>
   );
