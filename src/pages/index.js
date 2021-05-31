@@ -12,6 +12,7 @@ export default function Home() {
         <title>Amazon Bank</title>
       </Head>
       <div id="main-content">
+        
         <section className={styles.firstSection}>
           <div>
             <div className={styles.sectionContainer}>
@@ -69,6 +70,7 @@ export default function Home() {
                 </h1>
               </div>
             </div>
+
           </article>
         </section>
 
@@ -85,9 +87,18 @@ export default function Home() {
               <a href="#"className={styles.infoCardKnowMore}>Saiba mais
               </a>
             </div>
-            <div className={styles.cardImage}></div>
+            <div className={styles.cardImage}>
+              <div>
+                <div>
+                  <picture>
+                    <img src="./47653.jpg" ></img>
+                  </picture>
+                </div>
+              </div>
+            </div>
           </article>
         </section>
+
       </div>
     </>
   );
