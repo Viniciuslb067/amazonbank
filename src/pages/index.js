@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 
 import { SectionWithPicture } from "../components/sectionWithPicture";
+import { Register } from "../components/register";
 
 import styles from "../styles/index.module.scss";
 
@@ -14,7 +15,7 @@ export default function Home() {
       <div id="main-content">
         
       <SectionWithPicture/>
-
+      
         <section className={styles.secondSection}>
           <article className={styles.sectionArticle}>
             <div className={styles.sectionContent}>
