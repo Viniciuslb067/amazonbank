@@ -1,0 +1,152 @@
+.registerWrapper {
+  justify-self: center;
+  grid-area: 3 / 1 / span 2 / span 4;
+
+  div {
+    width: 100%;
+
+    form {
+      display: block;
+      margin-top: 0em;
+
+      div {
+        position: relative;
+        padding: 1.5rem;
+        border-radius: 1rem;
+        background-color: rgb(255, 255, 255);
+        max-width: 20.625rem;
+        margin: auto;
+
+        h3 {
+          font-family: Roboto, sans-serif;
+          margin: 0 0 32px;
+          color: rgb(17, 17, 17);
+          font-weight: 500;
+          letter-spacing: -0.03em;
+          font-size: 1.25rem;
+          line-height: 1.25;
+        }
+
+        div {
+         font-size: 1rem;
+         max-width: 100%;
+         padding: 1rem 0;
+         position: relative;
+         min-height: 96px; 
+
+         label {
+           cursor: pointer;
+           position: relative;
+           display: block;
+           color: rgba(17, 17, 17, 0.7);
+           
+           input {
+             background-color: transparent;
+             border-width: 0 0 1px;
+             border-top-style: initial;
+             border-right-style: initial;
+             border-left-style: initial;
+             border-top-color: initial;
+             border-right-color: initial;
+             border-left-color: initial;
+             border-image: initial;
+             border-radius: 0;
+             box-sizing: border-box;
+             color: rgb(17, 17, 17);
+             caret-color: currentColor;
+             display: block;
+             margin: 0;
+             padding: 8px 0;
+             text-align: left;
+             outline: none;
+             width: 100%;
+             border-bottom-style: solid;
+             border-bottom-color: rgba(17, 17, 17, 0.2);
+             --inputCurrentColor: #11111;
+             white-space: nowrap;
+             overflow: hidden;
+             text-overflow: ellipsis;
+
+           }
+
+           div {
+             span {
+               margin: 0;
+               color: inherit;
+               font-weight: 500;
+               letter-spacing: -0.01em;
+               font-size: 0.875rem;
+               line-height: 1.14;
+             }
+           }
+         }
+        }
+        
+        button {
+          padding-left: 1.25rem;
+          padding-right: 1.25rem;
+          border-radius: 6.25rem;
+          background: green;
+          color: rgb(255, 255, 255);
+          height: 3rem;
+          display: flex;
+          width: 100%;
+          margin-bottom: 1rem;
+          justify-content: space-between;
+          cursor: pointer;
+          outline: 0;
+          align-items: center;
+          vertical-align: middle;
+          overflow: hidden;
+          position: relative;
+          border: 0;
+          transform: translate3d(0, 0, 0);
+
+          &:disabled {
+            color: rgba(17, 17, 17, 0.2);
+            background: rgba(17, 17, 17, 0.1);
+            cursor: not-allowed;
+          }
+          span {
+            position: relative;
+            z-index: 2;
+            font-family: Roboto, sans-serif;
+            margin: 0;
+            color: inherit;
+            font-weight: 500;
+            letter-spacing: -0.03em;
+            font-size: 1.125rem;
+            line-height: 1.2;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .registerWrapper {
+    place-self: flex-end;
+
+    div {
+      form {
+        div {
+          margin-right: 0;
+
+          h3 {
+            font-size: 1.5rem;
+            line-height: 1.32;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1152px) {
+  .registerWrapper {
+    align-self: auto;
+    grid-area: 1 / 9 / auto / span 4;
+  }
+}

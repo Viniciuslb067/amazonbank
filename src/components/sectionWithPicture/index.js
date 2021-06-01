@@ -1,5 +1,7 @@
 import styles from "./styles.module.scss";
 
+import { Register } from "../register";
+
 export function SectionWithPicture() {
   return (
     <>
@@ -15,6 +17,7 @@ export function SectionWithPicture() {
                 atendimento 24h que realmente te ajuda
               </h2>
             </div>
+            <Register />
           </div>
         </div>
       </section>
