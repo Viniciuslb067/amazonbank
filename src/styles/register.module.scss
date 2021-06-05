@@ -1,0 +1,129 @@
+.sectionRegisterWrapper {
+  display: block;
+
+  section {
+    background-color: green;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../../public/florest2.jpg);
+
+    div {
+      display: grid;
+      min-width: 100vh;
+      gap: 32px 16px;
+      grid-template-rows: calc(100vh - 13rem) auto;
+      padding: 80px 16px 48px;
+
+      span {
+        box-shadow: none;
+        position: relative;
+        top: 22px;
+        left: 2rem;
+      }
+
+      div {
+        display: flex;
+        align-self: self-end;
+
+        div {
+          display: flex;
+          -webkit-box-align: start;
+          align-items: start;
+          flex-direction: column;
+
+          h1 {
+            font-family: Roboto, sans-serif;
+            margin: 0;
+            font-weight: 500;
+            letter-spacing: -0.03rem;
+            font-size: 1.75rem;
+            line-height: 1.16;
+            color: rgb(255, 255, 255);
+          }
+        }
+      }
+    }
+
+    div {
+      
+    }
+  }
+}
+
+@media (min-width: 360px) {
+  .sectionRegisterWrapper {
+    section {
+      background-image: url(../../public/florest2.jpg);
+
+      div {
+        div {
+          div {
+            h1 {
+              &:nth-last-child(2) {
+                margin-bottom: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .sectionRegisterWrapper {
+    section {
+      background-image: url(../../public/florest2.jpg);
+
+      div {
+        align-items: flex-end;
+        gap: 48px 32px;
+        grid-template-rows: 1fr auto;
+        padding-right: 24px;
+        padding-left: 24px;
+
+        span {
+          z-index: 1;
+        }
+
+        div {
+          div {
+            h1 {
+              font-size: 3rem;
+
+              &:nth-last-child(2) {
+                margin-bottom: 32px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1152px) {
+  .sectionRegisterWrapper {
+    section {
+      background-image: url(../../public/florest2.jpg);
+
+      div {
+        -webkit-box-align: center;
+        align-items: center;
+        row-gap: 0;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 1fr;
+        padding: 80px 48px;
+
+        div {
+          align-self: center;
+          grid-column: 1 / span 6;
+        }
+      }
+
+      div {
+       
+      }
+    }
+  }
+}
