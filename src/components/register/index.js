@@ -9,10 +9,6 @@ export function Register() {
   const [isValidCPF, setIsValidCPF] = useState(true);
   const [disabled, setDisabled] = useState();
 
-  console.log(disabled)
-  console.log(getCPF)
-  console.log(cpf.isValid(getCPF))
-
   useEffect(() => {
     async function verify() {
       if (cpf.isValid(getCPF)) {
@@ -42,7 +38,7 @@ export function Register() {
                     onChange={(e) => setGetCPF(e.target.value)}
                   />
                 </label>
-                {isValidCPF ? "" : <p> Precisamos de um CPF válido. </p>}
+                {isValidCPF ? "" : <p className={styles.cpfError}> Precisamos de um CPF válido. </p>}
               </div>
               <button disabled={disabled}>
                 <span>Continuar</span>
