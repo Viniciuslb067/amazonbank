@@ -11,7 +11,8 @@ function MyApp({ Component, pageProps }) {
   const showHeaderAndFooter =
     router.pathname === "/login" ||
     router.pathname === "/register" ||
-    router.pathname === "/pedir/amazon";
+    router.pathname === "/pedir/amazon" ||
+    router.pathname === "/transactions";
 
   return (
     <>
