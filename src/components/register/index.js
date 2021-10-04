@@ -13,9 +13,9 @@ export function Register() {
     async function verify() {
       if (cpf.isValid(getCPF)) {
         setIsValidCPF(true);
-        setDisabled(false)
+        setDisabled(false);
       } else {
-        setDisabled(true)
+        setDisabled(true);
         setIsValidCPF(false);
       }
     }
@@ -24,6 +24,7 @@ export function Register() {
 
   return (
     <>
+      <h3>Hello</h3>
       <div className={styles.registerWrapper}>
         <div>
           <form action="#">
@@ -38,7 +39,14 @@ export function Register() {
                     onChange={(e) => setGetCPF(e.target.value)}
                   />
                 </label>
-                {isValidCPF ? "" : <p className={styles.cpfError}> Precisamos de um CPF válido. </p>}
+                {isValidCPF ? (
+                  ""
+                ) : (
+                  <p className={styles.cpfError}>
+                    {" "}
+                    Precisamos de um CPF válido.{" "}
+                  </p>
+                )}
               </div>
               <button disabled={disabled}>
                 <span>Continuar</span>
